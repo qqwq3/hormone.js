@@ -197,7 +197,7 @@ isValidJSON('{"name":"Adam","age":20}'); // true
 isValidJSON('{"name":"Adam",age:"20"}'); // false
 ```
 #### 说明
-会一直更新和完善hormone.js这个简单而实用的 js 工具库
+  我会一直更新和完善hormone.js这个简单而实用的 js 工具库
 #### 作者
   leehormone@yeah.net
 #### [回到顶部](#readme)
