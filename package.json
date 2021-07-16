@@ -1,6 +1,6 @@
 {
   "name": "hormone.js",
-  "version": "2.0.6",
+  "version": "3.0.0",
   "description": "一个简单又实用的 JavaScript 工具库",
   "main": "index.ts",
   "scripts": {
