@@ -4,7 +4,7 @@
   "description": "一个简单又实用的 JavaScript 工具库",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "ts",
-	"js",
+    "js"
   ],
   "author": "leehormone@yeah.net",
   "license": "ISC",
