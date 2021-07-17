@@ -9,16 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * args: array -> 数组
  * */
 var CheckEmpty_1 = __importDefault(require("../type/CheckEmpty"));
-var IsArray_1 = __importDefault(require("../type/IsArray"));
 var IsBoolean_1 = __importDefault(require("../type/IsBoolean"));
 var ImpurityClean = function (array) {
     var temp = [];
-    if (IsArray_1.default(array)) {
-        return console.warn('请传入数组类型的参数');
-    }
-    if (array && array.length === 0) {
-        return array || [];
-    }
     for (var i = 0; i < array.length; i++) {
         var v = array[i];
         if (!CheckEmpty_1.default(v) && !IsBoolean_1.default(v) && !NaN) {
