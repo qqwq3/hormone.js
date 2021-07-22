@@ -1,7 +1,9 @@
 #### 一个简单又实用的 JavaScript 工具库
+##### 开始
 ```js
 npm install hormone.js --save
 ```
+##### 引入
 ```js
 // 方式一
 import * as hormone from 'hormone.js';
