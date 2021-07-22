@@ -17,7 +17,7 @@ var CheckEmpty_1 = __importDefault(require("../type/CheckEmpty"));
  * */
 var GetWeek = function (date, str) {
     if (str === void 0) { str = '星期'; }
-    var now = CheckEmpty_1.default(date) ? new Date() : new Date(date);
+    var now = !date ? new Date() : new Date(date);
     var days = now.getDay();
     var text = '';
     switch (days) {

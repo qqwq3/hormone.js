@@ -22,19 +22,20 @@ var GetDateWeeks = function (objs) {
     }
     else {
         var start = objs.start, end = objs.end, date = objs.date, _a = objs.type, type = _a === void 0 ? '星期' : _a;
+        type = CheckEmpty_1.default(type) ? '星期' : type;
         // 不传月份的情况
-        if (!CheckEmpty_1.default(start) && !CheckEmpty_1.default(end) && CheckEmpty_1.default(date)) {
+        if (start && end && !date) {
             var s = Format_1.default(start), e = Format_1.default(end);
             return ReArray(s, e, type);
         }
         // 只传月份的情况
-        if (CheckEmpty_1.default(start) && CheckEmpty_1.default(end) && !CheckEmpty_1.default(date)) {
+        if (!start && !end && date) {
             var fl = FirstLastDays_1.default(date);
             var s = fl[0], e = fl[1];
             return ReArray(s, e, type);
         }
         // 都传的情况
-        if (!CheckEmpty_1.default(start) && !CheckEmpty_1.default(end) && !CheckEmpty_1.default(date)) {
+        if (start && end && date) {
             var sn = new Date(start), en = new Date(end), dd = new Date(date);
             if (sn.getMonth() + 1 === dd.getMonth() + 1 && en.getMonth() + 1 === dd.getMonth() + 1) {
                 var s = Format_1.default(start), e = Format_1.default(end);
@@ -42,8 +43,14 @@ var GetDateWeeks = function (objs) {
             }
             return [];
         }
+        // 都不传的情况
+        if (!start && !end && !date) {
+            var fl = FirstLastDays_1.default();
+            var s = fl[0], e = fl[1];
+            return ReArray(s, e, type);
+        }
         // 不传开始日期的情况
-        if (CheckEmpty_1.default(start) && !CheckEmpty_1.default(end) && !CheckEmpty_1.default(date)) {
+        if (!start && end && date) {
             var en = new Date(end), dd = new Date(date);
             if (en.getMonth() + 1 === dd.getMonth() + 1) {
                 var fl = FirstLastDays_1.default(date);
@@ -53,7 +60,7 @@ var GetDateWeeks = function (objs) {
             return [];
         }
         // 不传结束日期的情况
-        if (!CheckEmpty_1.default(start) && CheckEmpty_1.default(end) && !CheckEmpty_1.default(date)) {
+        if (start && !end && date) {
             var sn = new Date(start), dd = new Date(date);
             if (sn.getMonth() + 1 === dd.getMonth() + 1) {
                 var fl = FirstLastDays_1.default(date);
@@ -63,13 +70,13 @@ var GetDateWeeks = function (objs) {
             return [];
         }
         // 只传开始日期的情况
-        if (!CheckEmpty_1.default(start) && CheckEmpty_1.default(end) && CheckEmpty_1.default(date)) {
+        if (start && !end && !date) {
             var fl = FirstLastDays_1.default(start);
             var s = start, e = fl[1];
             return ReArray(s, e, type);
         }
         // 只传结束日期的情况
-        if (CheckEmpty_1.default(start) && !CheckEmpty_1.default(end) && CheckEmpty_1.default(date)) {
+        if (!start && end && !date) {
             var fl = FirstLastDays_1.default(end);
             var s = fl[0], e = end;
             return ReArray(s, e, type);

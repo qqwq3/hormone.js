@@ -7,8 +7,16 @@ var Format_1 = __importDefault(require("./Format"));
 /**
  * name: 获取两个日期之间相差的天数
  * example: differDays('2021-07-16', '2021-07-06'); // 10
+ *          differDays(new Date(), '2021-07-06'); // 10
+ *          differDays('2021-07-06', new Date()); // 10
+ *          differDays(); // 0
  * args: dateInitial, dateFinal
  * */
-// @ts-ignore
-var DifferDays = function (dateInitial, dateFinal) { return Math.abs((new Date(Format_1.default(dateFinal)) - new Date(Format_1.default(dateInitial))) / (1000 * 3600 * 24)); };
+var DifferDays = function (dateInitial, dateFinal) {
+    if (dateInitial && dateFinal) {
+        // @ts-ignore
+        return Math.abs((new Date(Format_1.default(dateFinal)) - new Date(Format_1.default(dateInitial))) / (1000 * 3600 * 24));
+    }
+    return 0;
+};
 exports.default = DifferDays;

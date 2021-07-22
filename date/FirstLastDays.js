@@ -5,10 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var IsDate_1 = __importDefault(require("../type/IsDate"));
 var IsString_1 = __importDefault(require("../type/IsString"));
-var CheckEmpty_1 = __importDefault(require("../type/CheckEmpty"));
 var Format_1 = __importDefault(require("./Format"));
 var GetStartEnd = function (date) {
-    var now = CheckEmpty_1.default(date) ? new Date() : new Date(date);
+    var now = !date ? new Date() : new Date(date);
     var nowMonth = now.getMonth();
     var nowYear = now.getFullYear();
     var monthStartDate = new Date(nowYear, nowMonth, 1);
@@ -26,11 +25,11 @@ var GetStartEnd = function (date) {
  * args: date
  * */
 var FirstLastDays = function (date) {
-    if (CheckEmpty_1.default(date)) {
-        return GetStartEnd('');
+    if (!date) {
+        return GetStartEnd();
     }
     if (IsDate_1.default(date) || IsString_1.default(date)) {
-        return GetStartEnd(Format_1.default(date));
+        return GetStartEnd(date);
     }
     return [];
 };

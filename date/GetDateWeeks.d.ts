@@ -11,6 +11,8 @@
  *          getDateWeeks({end: '2021-07-05'}); // [{date: '2021-07-01', week: '星期四'}, ..., {date: '2021-07-05', week: '星期一'}]
  *          getDateWeeks({start: '2021-07-21', date: '2021-07'}); // [{date: '2021-07-21', week: '星期三'}, ..., {date: '2021-07-31', week: '星期六'}]
  *          getDateWeeks({start: '2021-07-21'}); // [{date: '2021-07-21', week: '星期三'}, ..., {date: '2021-07-31', week: '星期六'}]
+ *          getDateWeeks({start: new Date(), type: '周'}); // [{date: '2021-07-22', week: '周四'}, ..., {date: '2021-07-31', week: '周六'}]
+ *          getDateWeeks({type: '周'}); // [{date: '2021-07-01', week: '周四'}, ..., {date: '2021-07-31', week: '周六'}]
  * args: {start, end, date}
  * */
 interface Props {
@@ -19,5 +21,5 @@ interface Props {
     date: any;
     type: string;
 }
-declare const GetDateWeeks: (objs: Props) => any[];
+declare const GetDateWeeks: (objs: Props | any) => any[];
 export default GetDateWeeks;
