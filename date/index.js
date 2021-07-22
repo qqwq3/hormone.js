@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = void 0;
+exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = void 0;
 var Tomorrow_1 = require("./Tomorrow");
 Object.defineProperty(exports, "tomorrow", { enumerable: true, get: function () { return __importDefault(Tomorrow_1).default; } });
 var Yesterday_1 = require("./Yesterday");
@@ -26,3 +26,9 @@ var SecToTime_1 = require("./SecToTime");
 Object.defineProperty(exports, "secToTime", { enumerable: true, get: function () { return __importDefault(SecToTime_1).default; } });
 var TimeStamp_1 = require("./TimeStamp");
 Object.defineProperty(exports, "timeStamp", { enumerable: true, get: function () { return __importDefault(TimeStamp_1).default; } });
+var FirstLastDays_1 = require("./FirstLastDays");
+Object.defineProperty(exports, "firstLastDays", { enumerable: true, get: function () { return __importDefault(FirstLastDays_1).default; } });
+var GetWeek_1 = require("./GetWeek");
+Object.defineProperty(exports, "getWeek", { enumerable: true, get: function () { return __importDefault(GetWeek_1).default; } });
+var GetDateWeeks_1 = require("./GetDateWeeks");
+Object.defineProperty(exports, "getDateWeeks", { enumerable: true, get: function () { return __importDefault(GetDateWeeks_1).default; } });

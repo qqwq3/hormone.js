@@ -3,14 +3,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var IsDate_1 = __importDefault(require("../type/IsDate"));
+var IsString_1 = __importDefault(require("../type/IsString"));
+var CheckEmpty_1 = __importDefault(require("../type/CheckEmpty"));
 /**
  * name: 日期格式化
  * example: format('2021/7/16', 'YYYY-MM-DD'); // 2021-07-16
+ *          format('2021/7/16', 'YYYY'); // 2021
+ *          format('2021/7/16', 'YYYY-MM'); // 2021-07
+ *          format('2021/7/16', 'M'); // 7
+ *          format('2021/7/16', 'D'); // 16
  *          format(new Date(), 'YYYY-MM-DD hh:mm:ss') // 2021-07-16 12:30:30
+ *          format(null, 'YYYY'); // 2021 -> 最新年份
+ *          format(null, 'YYYY-MM'); // 2021-07 -> 最新月份
+ *
+ *          const s = Format('2021/7/16');
+ *          console.log(new Date(s).getMonth() + 1); // 7
  * args: date, type
  * */
-var IsDate_1 = __importDefault(require("../type/IsDate"));
-var IsString_1 = __importDefault(require("../type/IsString"));
 var Format = function (date, type) {
     if (type === void 0) { type = 'YYYY-MM-DD'; }
     // @ts-ignore
@@ -37,6 +47,10 @@ var Format = function (date, type) {
     if (IsDate_1.default(date) || IsString_1.default(date)) {
         // @ts-ignore
         return new Date(date).format(type);
+    }
+    if (CheckEmpty_1.default(date)) {
+        // @ts-ignore
+        return new Date().format(type);
     }
     return date;
 };

@@ -1,5 +1,5 @@
 export { default as chunk } from './Chunk';
-export { default as compact } from './Compact';
+export { default as filtrate } from './Filtrate';
 export { default as countOccurrences } from './CountOccurrences';
 export { default as flatten } from './Flatten';
 export { default as difference } from './Difference';

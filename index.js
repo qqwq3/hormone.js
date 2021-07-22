@@ -3,12 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isValidJSON = exports.isDate = exports.isUndefined = exports.isNull = exports.isFunction = exports.isNumber = exports.isObject = exports.isString = exports.isSymbol = exports.isBoolean = exports.isArray = exports.checkEmpty = exports.typeCheck = exports.getType = exports.words = exports.mask = exports.reversal = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.compact = exports.chunk = void 0;
+exports.isString = exports.isSymbol = exports.isBoolean = exports.isArray = exports.checkEmpty = exports.typeCheck = exports.getType = exports.pascalize = exports.decamelize = exports.camelize = exports.words = exports.mask = exports.camelizeKeys = exports.reversal = exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.filtrate = exports.chunk = void 0;
+exports.getRangeColors = exports.getRandomColor = exports.clone = exports.isValidJSON = exports.isDate = exports.isUndefined = exports.isNull = exports.isFunction = exports.isNumber = exports.isObject = void 0;
 // array
 var Chunk_1 = require("./array/Chunk");
 Object.defineProperty(exports, "chunk", { enumerable: true, get: function () { return __importDefault(Chunk_1).default; } });
-var Compact_1 = require("./array/Compact");
-Object.defineProperty(exports, "compact", { enumerable: true, get: function () { return __importDefault(Compact_1).default; } });
+var Filtrate_1 = require("./array/Filtrate");
+Object.defineProperty(exports, "filtrate", { enumerable: true, get: function () { return __importDefault(Filtrate_1).default; } });
 var CountOccurrences_1 = require("./array/CountOccurrences");
 Object.defineProperty(exports, "countOccurrences", { enumerable: true, get: function () { return __importDefault(CountOccurrences_1).default; } });
 var Flatten_1 = require("./array/Flatten");
@@ -72,14 +73,28 @@ var SecToTime_1 = require("./date/SecToTime");
 Object.defineProperty(exports, "secToTime", { enumerable: true, get: function () { return __importDefault(SecToTime_1).default; } });
 var TimeStamp_1 = require("./date/TimeStamp");
 Object.defineProperty(exports, "timeStamp", { enumerable: true, get: function () { return __importDefault(TimeStamp_1).default; } });
+var FirstLastDays_1 = require("./date/FirstLastDays");
+Object.defineProperty(exports, "firstLastDays", { enumerable: true, get: function () { return __importDefault(FirstLastDays_1).default; } });
+var GetWeek_1 = require("./date/GetWeek");
+Object.defineProperty(exports, "getWeek", { enumerable: true, get: function () { return __importDefault(GetWeek_1).default; } });
+var GetDateWeeks_1 = require("./date/GetDateWeeks");
+Object.defineProperty(exports, "getDateWeeks", { enumerable: true, get: function () { return __importDefault(GetDateWeeks_1).default; } });
 // object
 var Reversal_1 = require("./object/Reversal");
 Object.defineProperty(exports, "reversal", { enumerable: true, get: function () { return __importDefault(Reversal_1).default; } });
+var CamelizeKeys_1 = require("./object/CamelizeKeys");
+Object.defineProperty(exports, "camelizeKeys", { enumerable: true, get: function () { return __importDefault(CamelizeKeys_1).default; } });
 // string
 var Mask_1 = require("./string/Mask");
 Object.defineProperty(exports, "mask", { enumerable: true, get: function () { return __importDefault(Mask_1).default; } });
 var Words_1 = require("./string/Words");
 Object.defineProperty(exports, "words", { enumerable: true, get: function () { return __importDefault(Words_1).default; } });
+var Camelize_1 = require("./string/Camelize");
+Object.defineProperty(exports, "camelize", { enumerable: true, get: function () { return __importDefault(Camelize_1).default; } });
+var Decamelize_1 = require("./string/Decamelize");
+Object.defineProperty(exports, "decamelize", { enumerable: true, get: function () { return __importDefault(Decamelize_1).default; } });
+var Pascalize_1 = require("./string/Pascalize");
+Object.defineProperty(exports, "pascalize", { enumerable: true, get: function () { return __importDefault(Pascalize_1).default; } });
 // type
 var GetType_1 = require("./type/GetType");
 Object.defineProperty(exports, "getType", { enumerable: true, get: function () { return __importDefault(GetType_1).default; } });
@@ -109,3 +124,10 @@ var IsDate_1 = require("./type/IsDate");
 Object.defineProperty(exports, "isDate", { enumerable: true, get: function () { return __importDefault(IsDate_1).default; } });
 var IsValidJSON_1 = require("./type/IsValidJSON");
 Object.defineProperty(exports, "isValidJSON", { enumerable: true, get: function () { return __importDefault(IsValidJSON_1).default; } });
+// operation
+var Clone_1 = require("./operation/Clone");
+Object.defineProperty(exports, "clone", { enumerable: true, get: function () { return __importDefault(Clone_1).default; } });
+var GetRandomColor_1 = require("./operation/GetRandomColor");
+Object.defineProperty(exports, "getRandomColor", { enumerable: true, get: function () { return __importDefault(GetRandomColor_1).default; } });
+var GetRangeColors_1 = require("./operation/GetRangeColors");
+Object.defineProperty(exports, "getRangeColors", { enumerable: true, get: function () { return __importDefault(GetRangeColors_1).default; } });

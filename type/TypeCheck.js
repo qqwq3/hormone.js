@@ -3,6 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * name: 类型检查
  * example: typeCheck('1'); // String
+ *          typeCheck({}); // Object
+ *          typeCheck(2); // Number
+ *          typeCheck([]); // Array
+ *          typeCheck(function f() {}); // Function
+ *          typeCheck(null); // Null
+ *          typeCheck(true); // Boolean
+ *          typeCheck(new Date()); // Date
+ *          typeCheck(symbol('x')); // Symbol
+ *          let a; typeCheck(a); // Undefined
  * args: val -> 值
  * */
 var TypeCheck = function (val) {

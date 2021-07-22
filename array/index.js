@@ -3,11 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.compact = exports.chunk = void 0;
+exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.filtrate = exports.chunk = void 0;
 var Chunk_1 = require("./Chunk");
 Object.defineProperty(exports, "chunk", { enumerable: true, get: function () { return __importDefault(Chunk_1).default; } });
-var Compact_1 = require("./Compact");
-Object.defineProperty(exports, "compact", { enumerable: true, get: function () { return __importDefault(Compact_1).default; } });
+var Filtrate_1 = require("./Filtrate");
+Object.defineProperty(exports, "filtrate", { enumerable: true, get: function () { return __importDefault(Filtrate_1).default; } });
 var CountOccurrences_1 = require("./CountOccurrences");
 Object.defineProperty(exports, "countOccurrences", { enumerable: true, get: function () { return __importDefault(CountOccurrences_1).default; } });
 var Flatten_1 = require("./Flatten");

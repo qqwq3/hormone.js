@@ -9,3 +9,6 @@ export { default as addition } from './Addition';
 export { default as differArray } from './DifferArray';
 export { default as secToTime } from './SecToTime';
 export { default as timeStamp } from './TimeStamp';
+export { default as firstLastDays } from './FirstLastDays';
+export { default as getWeek } from './GetWeek';
+export { default as getDateWeeks } from './GetDateWeeks';
