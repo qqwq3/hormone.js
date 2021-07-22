@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * name: 获取原生类型的值
  * example: getType(new Set([1, 2, 3])); // 'set'
- *          GetType(new Map()); // 'map'
+ *          getType(new Map()); // 'map'
  *          getType(Promise); // 'function'
  *          getType(new Promise((resolve, reject) => resolve())); // 'promise'
  *          getType([]); // 'array'
