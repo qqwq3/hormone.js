@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isString = exports.isSymbol = exports.isBoolean = exports.isArray = exports.checkEmpty = exports.typeCheck = exports.getType = exports.pascalize = exports.decamelize = exports.camelize = exports.words = exports.mask = exports.camelizeKeys = exports.reversal = exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.filtrate = exports.chunk = void 0;
-exports.getRangeColors = exports.getRandomColor = exports.clone = exports.isValidJSON = exports.isDate = exports.isUndefined = exports.isNull = exports.isFunction = exports.isNumber = exports.isObject = void 0;
+exports.isSymbol = exports.isBoolean = exports.isArray = exports.checkEmpty = exports.typeCheck = exports.getType = exports.pascalize = exports.decamelize = exports.camelize = exports.words = exports.mask = exports.camelizeKeys = exports.reversal = exports.getWeekCycle = exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = exports.impurityClean = exports.rangeIdentical = exports.range = exports.sort = exports.sampleSize = exports.sample = exports.min = exports.max = exports.minN = exports.maxN = exports.remove = exports.union = exports.intersection = exports.pull = exports.dropRight = exports.drop = exports.uniq = exports.difference = exports.flatten = exports.countOccurrences = exports.filtrate = exports.chunk = void 0;
+exports.toChinesNum = exports.chineseCurrency = exports.getRangeColors = exports.getRandomColor = exports.clone = exports.isValidJSON = exports.isDate = exports.isUndefined = exports.isNull = exports.isFunction = exports.isNumber = exports.isObject = exports.isString = void 0;
 // array
 var Chunk_1 = require("./array/Chunk");
 Object.defineProperty(exports, "chunk", { enumerable: true, get: function () { return __importDefault(Chunk_1).default; } });
@@ -79,6 +79,8 @@ var GetWeek_1 = require("./date/GetWeek");
 Object.defineProperty(exports, "getWeek", { enumerable: true, get: function () { return __importDefault(GetWeek_1).default; } });
 var GetDateWeeks_1 = require("./date/GetDateWeeks");
 Object.defineProperty(exports, "getDateWeeks", { enumerable: true, get: function () { return __importDefault(GetDateWeeks_1).default; } });
+var GetWeekCycle_1 = require("./date/GetWeekCycle");
+Object.defineProperty(exports, "getWeekCycle", { enumerable: true, get: function () { return __importDefault(GetWeekCycle_1).default; } });
 // object
 var Reversal_1 = require("./object/Reversal");
 Object.defineProperty(exports, "reversal", { enumerable: true, get: function () { return __importDefault(Reversal_1).default; } });
@@ -131,3 +133,7 @@ var GetRandomColor_1 = require("./operation/GetRandomColor");
 Object.defineProperty(exports, "getRandomColor", { enumerable: true, get: function () { return __importDefault(GetRandomColor_1).default; } });
 var GetRangeColors_1 = require("./operation/GetRangeColors");
 Object.defineProperty(exports, "getRangeColors", { enumerable: true, get: function () { return __importDefault(GetRangeColors_1).default; } });
+var ChineseCurrency_1 = require("./operation/ChineseCurrency");
+Object.defineProperty(exports, "chineseCurrency", { enumerable: true, get: function () { return __importDefault(ChineseCurrency_1).default; } });
+var ToChinesNum_1 = require("./operation/ToChinesNum");
+Object.defineProperty(exports, "toChinesNum", { enumerable: true, get: function () { return __importDefault(ToChinesNum_1).default; } });

@@ -15,7 +15,7 @@ var ReArray = function (s, e, str) {
     return array;
 };
 var GetDateWeeks = function (objs) {
-    if (CheckEmpty_1.default(objs)) {
+    if (!objs || CheckEmpty_1.default(objs)) {
         var fl = FirstLastDays_1.default();
         var s = fl[0], e = fl[1];
         return ReArray(s, e, '星期');

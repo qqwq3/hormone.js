@@ -15,11 +15,11 @@
  *          getDateWeeks({type: '周'}); // [{date: '2021-07-01', week: '周四'}, ..., {date: '2021-07-31', week: '周六'}]
  * args: {start, end, date}
  * */
-interface Props {
-    start: string;
-    end: string;
-    date: any;
-    type: string;
+export interface Props {
+    start?: string;
+    end?: string;
+    date?: any;
+    type?: string;
 }
-declare const GetDateWeeks: (objs: Props | any) => any[];
+declare const GetDateWeeks: (objs?: Props | any) => any[];
 export default GetDateWeeks;
