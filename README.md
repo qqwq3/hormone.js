@@ -205,6 +205,16 @@ getDateWeeks({start: '2021-07-21', date: '2021-07'}); // [{date: '2021-07-21', w
 getDateWeeks({start: '2021-07-21'}); // [{date: '2021-07-21', week: '星期三'}, ..., {date: '2021-07-31', week: '星期六'}]
 getDateWeeks({start: new Date(), type: '周'}); // [{date: '2021-07-22', week: '周四'}, ..., {date: '2021-07-31', week: '周六'}]
 getDateWeeks({type: '周'}); // [{date: '2021-07-01', week: '周四'}, ..., {date: '2021-07-31', week: '周六'}]
+
+// 15. 根据年份和月份获取当月有几周
+getWeekCycle({type: '周', date: '2021-07'});
+// [
+  {key: 1, text: '第一周', start: '2021-07-01', end: '2021-07-04', data: [{date: '2021-07-01', week: '周四'}, ..., {date: '2021-07-04', week: '周日'}]},
+  {key: 2, text: '第二周', start: '2021-07-05', end: '2021-07-11', data: [{date: '2021-07-05', week: '周一'}, ..., {date: '2021-07-11', week: '周日'}]},
+  {key: 3, text: '第三周', start: '2021-07-12', end: '2021-07-18', data: [{date: '2021-07-12', week: '周一'}, ..., {date: '2021-07-18', week: '周日'}]},
+  {key: 4, text: '第四周', start: '2021-07-19', end: '2021-07-25', data: [{date: '2021-07-19', week: '周一'}, ..., {date: '2021-07-25', week: '周日'}]},
+  {key: 5, text: '第五周', start: '2021-07-26', end: '2021-07-31', data: [{date: '2021-07-26', week: '周一'}, ..., {date: '2021-07-31', week: '周六'}]}
+]
 ```
 ##### 对象
 ```js
@@ -325,6 +335,24 @@ getRangeColors(null); // [{key: 0, color: '#c4192e'}, {key: 1, color: '#370665'}
 getRangeColors(0); // [{key: 0, color: '#c4192e'}]
 getRangeColors(-1); // [{key: 0, color: '#c4192e'}]
 getRangeColors(100); // [{key: 0, color: '#c4192e'}, ..., {key: 99, color: '#10f168'}]
+
+// 04. 中文大写货币
+chineseCurrency(1) or chineseCurrency('1'); // '壹元整'
+chineseCurrency('100.25'); // '壹佰元贰角伍分'
+chineseCurrency('100000000'); // '壹亿元整'
+
+// 05. 数字转中文数字或中文大写数字
+toChinesNum({num: 1}); // '一'
+toChinesNum({num: '1000000000000'}); // '一万亿'
+toChinesNum({num: '999999999.99'}); // '九亿九千九百九十九万九千九百九十九点九九'
+toChinesNum({num: '999999999.99', capitalize: true}); // '玖亿玖仟玖佰玖拾玖万玖仟玖佰玖拾玖点玖玖'
+toChinesNum({num: '125'}); // '一百二十五'
+toChinesNum({num: '-125'}); // '负一百二十五'
+toChinesNum({num: '125.25'}); // '一百二十五点二五'
+toChinesNum({num: '125.25', capitalize: true}); // '壹佰贰拾伍点贰伍'
+toChinesNum({num: '125.255', capitalize: true}); // '壹佰贰拾伍点贰伍伍'
+toChinesNum({num: '-125.255', capitalize: true, digits: 3}); // '负壹佰贰拾伍点贰伍伍'
+toChinesNum({num: '-125.255', capitalize: true, digits: 3, suf: '元'}); // '负壹佰贰拾伍点贰伍伍元'
 ```
 #### 说明
   我会一直努力更新和完善hormone.js这个简单而实用的 js 工具库，谢谢大家的支持和喜欢。
