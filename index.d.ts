@@ -35,6 +35,7 @@ export { default as firstLastDays } from './date/FirstLastDays';
 export { default as getWeek } from './date/GetWeek';
 export { default as getDateWeeks } from './date/GetDateWeeks';
 export { default as getWeekCycle } from './date/GetWeekCycle';
+export { default as sections } from './date/Sections';
 export { default as reversal } from './object/Reversal';
 export { default as camelizeKeys } from './object/CamelizeKeys';
 export { default as mask } from './string/Mask';

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getWeekCycle = exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = void 0;
+exports.sections = exports.getWeekCycle = exports.getDateWeeks = exports.getWeek = exports.firstLastDays = exports.timeStamp = exports.secToTime = exports.differArray = exports.addition = exports.subtract = exports.compare = exports.differDays = exports.format = exports.toDay = exports.yesterday = exports.tomorrow = void 0;
 var Tomorrow_1 = require("./Tomorrow");
 Object.defineProperty(exports, "tomorrow", { enumerable: true, get: function () { return __importDefault(Tomorrow_1).default; } });
 var Yesterday_1 = require("./Yesterday");
@@ -34,3 +34,5 @@ var GetDateWeeks_1 = require("./GetDateWeeks");
 Object.defineProperty(exports, "getDateWeeks", { enumerable: true, get: function () { return __importDefault(GetDateWeeks_1).default; } });
 var GetWeekCycle_1 = require("./GetWeekCycle");
 Object.defineProperty(exports, "getWeekCycle", { enumerable: true, get: function () { return __importDefault(GetWeekCycle_1).default; } });
+var Sections_1 = require("./Sections");
+Object.defineProperty(exports, "sections", { enumerable: true, get: function () { return __importDefault(Sections_1).default; } });

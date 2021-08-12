@@ -13,3 +13,4 @@ export { default as firstLastDays } from './FirstLastDays';
 export { default as getWeek } from './GetWeek';
 export { default as getDateWeeks } from './GetDateWeeks';
 export { default as getWeekCycle } from './GetWeekCycle';
+export { default as sections } from './Sections';
