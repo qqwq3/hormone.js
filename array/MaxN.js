@@ -1,18 +1,1 @@
-"use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * name: 返回数组中N个最大元素
- * example: maxN([1, 2, 3]); // [3]
- *          maxN([1, 2, 3], 2); // [3, 2]
- * args: arr -> 数组； n -> 返回几个
- * */
-var MaxN = function (arr, n) {
-    if (n === void 0) { n = 1; }
-    return __spreadArray([], arr).sort(function (a, b) { return b - a; }).slice(0, n);
-};
-exports.default = MaxN;
+"use strict";var __spreadArray=this&&this.__spreadArray||function(r,e){for(var t=0,a=e.length,n=r.length;t<a;t++,n++)r[n]=e[t];return r};Object.defineProperty(exports,"__esModule",{value:!0});var MaxN=function(r,e){return void 0===e&&(e=1),__spreadArray([],r).sort(function(r,e){return e-r}).slice(0,e)};exports.default=MaxN;

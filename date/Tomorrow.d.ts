@@ -4,5 +4,5 @@
  *          tomorrow('2020-05-20'); '2020-05-21'
  * args: value -> 日期：2020-05-20
  * */
-declare const Tomorrow: (value?: string | undefined) => string;
+declare const Tomorrow: (value?: string) => string;
 export default Tomorrow;

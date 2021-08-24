@@ -1,10 +1,1 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.camelizeKeys = exports.reversal = void 0;
-var Reversal_1 = require("./Reversal");
-Object.defineProperty(exports, "reversal", { enumerable: true, get: function () { return __importDefault(Reversal_1).default; } });
-var CamelizeKeys_1 = require("./CamelizeKeys");
-Object.defineProperty(exports, "camelizeKeys", { enumerable: true, get: function () { return __importDefault(CamelizeKeys_1).default; } });
+"use strict";var __importDefault=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.camelizeKeys=exports.reversal=void 0;var Reversal_1=require("./Reversal");Object.defineProperty(exports,"reversal",{enumerable:!0,get:function(){return __importDefault(Reversal_1).default}});var CamelizeKeys_1=require("./CamelizeKeys");Object.defineProperty(exports,"camelizeKeys",{enumerable:!0,get:function(){return __importDefault(CamelizeKeys_1).default}});

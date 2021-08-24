@@ -1,9 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * name: 数组取样，随机获取数组中的一个元素
- * example: sample([3, 7, 9, 11]); // 9
- * args: arr -> 数组
- * */
-var Sample = function (arr) { return arr[Math.floor(Math.random() * arr.length)]; };
-exports.default = Sample;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var Sample=function(e){return e[Math.floor(Math.random()*e.length)]};exports.default=Sample;

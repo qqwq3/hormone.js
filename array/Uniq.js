@@ -1,18 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * name: 数组去重
- * example: uniq([1, 1, 2, 3]); // [1, 2, 3]
- * args: array -> 数组
- * */
-var Uniq = function (array) {
-    var arr = [];
-    for (var i = 0; i < array.length; i++) {
-        var v = array[i];
-        if (arr.indexOf(v) === -1) {
-            arr.push(v);
-        }
-    }
-    return arr;
-};
-exports.default = Uniq;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var Uniq=function(e){for(var r=[],t=0;t<e.length;t++){var n=e[t];-1===r.indexOf(n)&&r.push(n)}return r};exports.default=Uniq;

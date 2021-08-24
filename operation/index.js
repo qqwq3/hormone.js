@@ -1,16 +1,1 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.toChinesNum = exports.chineseCurrency = exports.getRangeColors = exports.getRandomColor = exports.clone = void 0;
-var Clone_1 = require("./Clone");
-Object.defineProperty(exports, "clone", { enumerable: true, get: function () { return __importDefault(Clone_1).default; } });
-var GetRandomColor_1 = require("./GetRandomColor");
-Object.defineProperty(exports, "getRandomColor", { enumerable: true, get: function () { return __importDefault(GetRandomColor_1).default; } });
-var GetRangeColors_1 = require("./GetRangeColors");
-Object.defineProperty(exports, "getRangeColors", { enumerable: true, get: function () { return __importDefault(GetRangeColors_1).default; } });
-var ChineseCurrency_1 = require("./ChineseCurrency");
-Object.defineProperty(exports, "chineseCurrency", { enumerable: true, get: function () { return __importDefault(ChineseCurrency_1).default; } });
-var ToChinesNum_1 = require("./ToChinesNum");
-Object.defineProperty(exports, "toChinesNum", { enumerable: true, get: function () { return __importDefault(ToChinesNum_1).default; } });
+"use strict";var __importDefault=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.toChinesNum=exports.chineseCurrency=exports.getRangeColors=exports.getRandomColor=exports.clone=void 0;var Clone_1=require("./Clone");Object.defineProperty(exports,"clone",{enumerable:!0,get:function(){return __importDefault(Clone_1).default}});var GetRandomColor_1=require("./GetRandomColor");Object.defineProperty(exports,"getRandomColor",{enumerable:!0,get:function(){return __importDefault(GetRandomColor_1).default}});var GetRangeColors_1=require("./GetRangeColors");Object.defineProperty(exports,"getRangeColors",{enumerable:!0,get:function(){return __importDefault(GetRangeColors_1).default}});var ChineseCurrency_1=require("./ChineseCurrency");Object.defineProperty(exports,"chineseCurrency",{enumerable:!0,get:function(){return __importDefault(ChineseCurrency_1).default}});var ToChinesNum_1=require("./ToChinesNum");Object.defineProperty(exports,"toChinesNum",{enumerable:!0,get:function(){return __importDefault(ToChinesNum_1).default}});

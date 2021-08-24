@@ -5,5 +5,5 @@
  *          chineseCurrency('100000000'); // '壹亿元整'
  * args: value
  * */
-declare const ChineseCurrency: (value?: string | number | undefined) => string | any;
+declare const ChineseCurrency: (value?: string | number) => string | any;
 export default ChineseCurrency;

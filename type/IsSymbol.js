@@ -1,13 +1,1 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var TypeCheck_1 = __importDefault(require("./TypeCheck"));
-/**
- * name: 是否为symbol
- * example: isSymbol(Symbol('x')); // true
- * args: val -> 值
- * */
-var IsSymbol = function (val) { return typeof val === 'symbol' && TypeCheck_1.default(val) === 'Symbol'; };
-exports.default = IsSymbol;
+"use strict";var __importDefault=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var TypeCheck_1=__importDefault(require("./TypeCheck")),IsSymbol=function(e){return"symbol"==typeof e&&"Symbol"===TypeCheck_1.default(e)};exports.default=IsSymbol;

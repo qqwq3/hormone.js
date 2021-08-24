@@ -1,13 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * name: 从右开始删除数组元素
- * describe: 返回从右开始删除 n个元素的新数组
- * example: dropRight([1, 2, 3, 4], 2); // [1, 2]
- * args: array -> 数组; n -> 删除元素个数
- * */
-var DropRight = function (array, n) {
-    if (n === void 0) { n = 1; }
-    return array.slice(0, -n);
-};
-exports.default = DropRight;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var DropRight=function(e,t){return e.slice(0,-(t=void 0===t?1:t))};exports.default=DropRight;

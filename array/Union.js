@@ -1,14 +1,1 @@
-"use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * name: 获取数组合集
- * example: union([1, 2, 3], [1, 4, 5]); // [1, 2, 3, 4, 5]
- * args: a -> 数组； b -> 数组
- * */
-var Union = function (a, b) { return Array.from(new Set(__spreadArray(__spreadArray([], a), b))); };
-exports.default = Union;
+"use strict";var __spreadArray=this&&this.__spreadArray||function(r,e){for(var t=0,a=e.length,n=r.length;t<a;t++,n++)r[n]=e[t];return r};Object.defineProperty(exports,"__esModule",{value:!0});var Union=function(r,e){return Array.from(new Set(__spreadArray(__spreadArray([],r),e)))};exports.default=Union;
